@@ -13,44 +13,48 @@
     <link rel="stylesheet" href="views/css/style.css">
     </head>
 
-    <body>
-        <div class="container" id="fondo">
-            <nav class="navbar navbar-expand-sm bg-gradient">
+    <body class="bg-secondary" >
+        <div class="container" id="fondo" >
+            <nav class="navbar navbar-expand-sm bg-primary navbar-dark">
                 <div class="container-fluid">
                   <!-- Links -->
                   <ul class="navbar-nav">
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link 1</a>
+                      <a class="nav-link" href="#">MY CONSTRUCCION</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link 2</a>
+                      <a class="nav-link" href="#">Conócemos</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Link 3</a>
+                      <a class="nav-link" href="#">Contáctanos</a>
                     </li>
+                    <a class="navbar-brand" href="#">
+                        <img src="logo.png" alt="" style="width:40px;" class="rounded-pill"> 
+                    </a>
                   </ul>
                 </div>
             </nav>
-
-        <div class="p-5" id="welcome">
-            <h1>Bienvenido </h1>
+            <div style=" background-image:url('https://aycconstructora.com.uy/wp-content/uploads/2021/07/fondo-portada-min.png') ;
+            background-repeat: no-repeat; background-size: cover;">
+        <div class="p-5" id="welcome" style="color: white; text-align: center">
+            <h1 >Bienvenido</h1>
             <br>
-            <h1> Login de usuario </h1>
+            <h1></h1>
         </div>
 
         <div class="p-3 bg-gradient" id="login">
             <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?" method="post" class="was-validated">
                 <div class=" col mb-3 mt-3">
                     <label for="nombre" class="form-label">
-                        <h2>Nombre:</h2>
+                        <h2 style="color: white">Correo:</h2>
                     </label>
-                    <input type="text" class="form-control" name="nombre" placeholder="Ingrese su nombre" required>
+                    <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Correo" required>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="mb-3">
                     <label for="contraseña" class="form-label">
-                        <h2>Contraseña:</h2>
+                        <h2 style="color: white">Contraseña:</h2>
                     </label>
                     <input class="form-control" type="password" name="password" placeholder="Ingrese su contraseña"
                         required>
@@ -58,9 +62,10 @@
                     <div class="invalid-feedback"></div>
                 </div>
                 <div class="d-grid mt-3">
-                    <input class="btn btn-block" type="submit" value="Ingresar" id="btn"/>
+                    <input class="btn btn-info" type="submit" value="Ingresar" id="btn"/>
                 </div>
             </form>
+        </div>
         </div>
 
     </div>
