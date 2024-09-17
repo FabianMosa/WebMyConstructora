@@ -43,12 +43,12 @@
         </div>
 
         <div class="p-3 bg-gradient" id="login">
-            <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?" method="post" class="was-validated">
+            <form action="srvUser?accion=verificar" method="post" class="was-validated">
                 <div class=" col mb-3 mt-3">
                     <label for="nombre" class="form-label">
                         <h2 style="color: white">Correo:</h2>
                     </label>
-                    <input type="text" class="form-control" name="nombre" placeholder="Ingrese su Correo" required>
+                    <input type="text" class="form-control" name="txtNombre" placeholder="Ingrese" required>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
                 </div>
@@ -56,13 +56,25 @@
                     <label for="contraseña" class="form-label">
                         <h2 style="color: white">Contraseña:</h2>
                     </label>
-                    <input class="form-control" type="password" name="password" placeholder="Ingrese su contraseña"
+                    <input class="form-control" type="password" name="txtPassword" placeholder="Ingrese"
                         required>
                     <div class="valid-feedback"></div>
                     <div class="invalid-feedback"></div>
                 </div>
+                 <br>
                 <div class="d-grid mt-3">
                     <input class="btn btn-info" type="submit" value="Ingresar" id="btn"/>
+                </div>
+                 <br>
+                <div class="row">
+                    <h5 class="col" style="color: whitesmoke;text-align: left">Registrarse</h5>
+                    <h5  class="col" style="color: whitesmoke;text-align: right">Recuperar contraseña</h5>
+                </div>
+                <div class="row">
+                    <h5 class="col" style="color: whitesmoke;text-align: left"></h5>
+                    <br>
+                    <br>
+                    <h5  class="col" style="color: whitesmoke;text-align: right"></h5>
                 </div>
             </form>
         </div>

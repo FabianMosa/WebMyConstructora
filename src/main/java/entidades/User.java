@@ -8,19 +8,17 @@ package entidades;
 public class User {
     public int id;
     public String correo;
-    public int password;
+    public String password;
 
     public User() {
     }
 
-    public User(int id, String correo, int password) {
+    public User(int id, String correo, String password) {
         this.id = id;
         this.correo = correo;
         this.password = password;
     }
 
-    
-    
     public int getId() {
         return id;
     }
@@ -37,13 +35,13 @@ public class User {
         this.correo = correo;
     }
 
-    public int getPassword() {
+    public String getPassword() {
         return password;
     }
 
-    public void setPassword(int password) {
+    public void setPassword(String password) {
         this.password = password;
     }
-    
-    
+
+   
 }
