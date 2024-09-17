@@ -35,9 +35,8 @@ public class DaoUser extends Conexion {
         } catch (Exception e) {
             System.out.println("Error"+ e.getMessage());
         }
-         cn = null;
-         return usu;
-    }
-   
+        cn = null;
+        return usu;
+    } 
     
 }
